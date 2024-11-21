@@ -45,5 +45,6 @@ st.markdown("""
 - Criado por: Gustavo Carmo, Hugo Rios, Jenivaldo Pereira
 - Contato: AquaSpy@gmail.com
 
-&copy 2024 AquaSpy; Todos os direitos reservados.
+© 2024 AquaSpy\n
+Todos os direitos reservados.
 """, unsafe_allow_html=True)

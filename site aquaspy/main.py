@@ -1,9 +1,9 @@
 import streamlit as st
-import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import time
+from streamlit_option_menu import option_menu
 
 @st.cache_data
 def convert_df(df):
@@ -60,9 +60,11 @@ def AquaSpy():
     - Criado por: Gustavo Carmo, Hugo Rios, Jenivaldo Pereira
     - Contato: AquaSpy@gmail.com
 
-    &copy 2024 AquaSpy; Todos os direitos reservados.
+    © 2024 AquaSpy\n
+    Todos os direitos reservados.
     """, unsafe_allow_html=True)
 
+    
 pg = st.navigation([st.Page(AquaSpy),st.Page("Dashboard.py"),st.Page("Predição.py"),st.Page("Eventos.py"),st.Page("Denuncia.py")])
 
 pg.run()
