@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import time
-from streamlit_option_menu import option_menu
+
 
 @st.cache_data
 def convert_df(df):
@@ -53,6 +53,7 @@ def AquaSpy():
         data=csv,
         file_name="População e Plástico.csv",
         mime="text/csv",
+        help='🌐 Dados de produção de plástico no mundo'
     )
 
     st.markdown("""
@@ -64,7 +65,8 @@ def AquaSpy():
     Todos os direitos reservados.
     """, unsafe_allow_html=True)
 
-    
+
+
 pg = st.navigation([st.Page(AquaSpy),st.Page("Dashboard.py"),st.Page("Predição.py"),st.Page("Eventos.py"),st.Page("Denuncia.py")])
 
 pg.run()
