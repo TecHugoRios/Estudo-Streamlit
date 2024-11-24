@@ -1,6 +1,5 @@
 import smtplib
 import streamlit as st
-import streamlit.components.v1 as components
 
 nome = "AquaSpy"
 sender = f"{nome} <user@demomailtrap.com>"

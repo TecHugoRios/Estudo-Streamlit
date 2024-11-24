@@ -4,7 +4,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 
-
 def sendemail(nome, titulo, mensagem, foto):
     sender = f"{nome}<user@demomailtrap.com>"
     receiver = "AquaSpy <hugoba532@gmail.com>"
@@ -49,5 +48,7 @@ if submitted:
     if nome and mensagem and titulo and foto:  # Verifica se todos os campos estão preenchidos
         sendemail(nome, titulo, mensagem, foto)
         st.success("Email enviado com sucesso!")
+        st.toast('Obrigado por ajudar o planeta!', icon='🎉')
+        st.balloons()
     else:
         st.error("Por favor, preencha todos os campos e envie uma foto.")
