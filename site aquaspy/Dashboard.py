@@ -26,7 +26,7 @@ met2.metric(label = "Plastico Mundial Per Capita (2019)", value = f"{plasticoMun
 #met3.metric(label = "---------", value = f"----------", delta = "0")
 #st.divider()
 
-components.iframe("https://playground.powerbi.com/sampleReportEmbed", height=800, scrolling=True)
+components.iframe("https://app.powerbi.com/reportEmbed?reportId=a065dbdd-d3c2-4939-a021-fafd27af3ed3&autoAuth=true&ctid=1d90b5e6-9b17-47a4-a2fe-1884712d8c2f", height=800, scrolling=True)
 
 csv = convert_df(df2)
 
